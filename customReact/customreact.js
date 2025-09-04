@@ -1,9 +1,12 @@
 function customRender(reactElement,container){
+    //Methond 1
     // const domELemenet = document.createElement(reactElement.type);
     // domELemenet.innerHTML = reactElement.children;
     // domELemenet.setAttribute("href", reactElement.props.href);
     // domELemenet.setAttribute("target",reactElement.props.target);
     // container.appendChild(domELemenet);
+
+    //Method 2
     const domELement = document.createElement(reactElement.type);
     domELement.innerHTML = reactElement.children;
     for(const prop in reactElement.props){
